@@ -3,7 +3,7 @@ const setUpGlobalObject = require("../lib/sugar");
 // Invoking this function adds the new methods to the Global Object
 setUpGlobalObject();
 
-describe.only("Object.size", () => {
+describe("Object.size", () => {
   test("returns the correct size when given an object", () => {
     expect(
       Object.size({
@@ -90,7 +90,7 @@ describe("Object.clone", () => {
   });
 });
 
-describe("Object.get", () => {
+describe.only("Object.get", () => {
   test("returns the value for the given key", () => {
     expect(
       Object.get(
