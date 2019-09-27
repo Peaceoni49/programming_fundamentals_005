@@ -136,7 +136,7 @@ describe("Object.get", () => {
   });
 });
 
-describe.only("Object.has", () => {
+describe("Object.has", () => {
   test("returns true if the object has the give key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
@@ -199,7 +199,7 @@ describe("Object.sum", () => {
   });
 });
 
-describe("Object.invert", () => {
+describe.only("Object.invert", () => {
   test("returns a new object which is the inversion of the given object", () => {
     const original = {
       name: "Sally",
